@@ -1,4 +1,5 @@
 @echo off
+setlocal enabledelayedexpansion
 
 for /f "tokens=*" %%a in (C:\Users\ealflm\.nvterm_info) do (
     for /f "tokens=1" %%b in ('tasklist /FI "PID eq %%a" /NH') do (
